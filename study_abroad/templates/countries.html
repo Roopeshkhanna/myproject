@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main class="main">
+    <!-- Search Section -->
+    <section class="container mt-0"> <!-- Reduced margin from mt-2 to mt-0 -->
+        <div class="row justify-content-center">
+            <div class="col-md-6 position-relative">
+                <i class="bi bi-search position-absolute" style="left: 15px; top: 50%; transform: translateY(-50%); color: #999;"></i>
+                <input type="text" class="form-control ps-5 rounded-pill" placeholder="Search universities..." style="margin-top: -10px;"> <!-- Moved search bar slightly up -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Universities Section -->
+    <section class="container mt-0"> <!-- Reduced margin from mt-4 to mt-2 -->
+        <h2 class="text-center fw-bold">Top Universities to <span class="text-primary">Study Abroad</span></h2>
+        <div class="row mt-0"> <!-- Reduced margin from mt-4 to mt-3 -->
+            <div class="col-md-6 mb-3">
+                <div class="card shadow-sm p-3 d-flex flex-row align-items-center" style="border-radius: 10px; background-color: #f8fbff;">
+                    <img src="{% static 'images/university_birmingham.png' %}" class="rounded" style="width: 60px; height: 60px; border: 1px solid #ddd; padding: 5px; background: white;" alt="University of Birmingham">
+                    <div class="ms-3" style="flex-grow: 1;">
+                        <h5 class="mb-1" style="font-weight: 700;">University of Birmingham</h5>
+                        <p class="text-muted mb-0">Birmingham, United Kingdom</p>
+                    </div>
+                    <span class="badge" style="background: #fff3cd; color: #856404; font-weight: 600; padding: 5px 10px; border-radius: 5px;">497+ Courses</span>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card shadow-sm p-3 d-flex flex-row align-items-center" style="border-radius: 10px; background-color: #f8fbff;">
+                    <img src="{% static 'images/queen_mary.png' %}" class="rounded" style="width: 60px; height: 60px; border: 1px solid #ddd; padding: 5px; background: white;" alt="Queen Mary University">
+                    <div class="ms-3" style="flex-grow: 1;">
+                        <h5 class="mb-1" style="font-weight: 700;">Queen Mary University of London</h5>
+                        <p class="text-muted mb-0">London, United Kingdom</p>
+                    </div>
+                    <span class="badge" style="background: #fff3cd; color: #856404; font-weight: 600; padding: 5px 10px; border-radius: 5px;">519+ Courses</span>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card shadow-sm p-3 d-flex flex-row align-items-center" style="border-radius: 10px; background-color: #f8fbff;">
+                    <img src="{% static 'images/university_essex.png' %}" class="rounded" style="width: 60px; height: 60px; border: 1px solid #ddd; padding: 5px; background: white;" alt="University of Essex">
+                    <div class="ms-3" style="flex-grow: 1;">
+                        <h5 class="mb-1" style="font-weight: 700;">University of Essex</h5>
+                        <p class="text-muted mb-0">Colchester, United Kingdom</p>
+                    </div>
+                    <span class="badge" style="background: #fff3cd; color: #856404; font-weight: 600; padding: 5px 10px; border-radius: 5px;">450+ Courses</span>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card shadow-sm p-3 d-flex flex-row align-items-center" style="border-radius: 10px; background-color: #f8fbff;">
+                    <img src="{% static 'images/coventry_university.png' %}" class="rounded" style="width: 60px; height: 60px; border: 1px solid #ddd; padding: 5px; background: white;" alt="Coventry University">
+                    <div class="ms-3" style="flex-grow: 1;">
+                        <h5 class="mb-1" style="font-weight: 700;">Coventry University</h5>
+                        <p class="text-muted mb-0">Coventry, United Kingdom</p>
+                    </div>
+                    <span class="badge" style="background: #fff3cd; color: #856404; font-weight: 600; padding: 5px 10px; border-radius: 5px;">503+ Courses</span>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card shadow-sm p-3 d-flex flex-row align-items-center" style="border-radius: 10px; background-color: #f8fbff;">
+                    <img src="{% static 'images/nottingham_trent.png' %}" class="rounded" style="width: 60px; height: 60px; border: 1px solid #ddd; padding: 5px; background: white;" alt="Nottingham Trent University">
+                    <div class="ms-3" style="flex-grow: 1;">
+                        <h5 class="mb-1" style="font-weight: 700;">Nottingham Trent University</h5>
+                        <p class="text-muted mb-0">Nottingham, United Kingdom</p>
+                    </div>
+                    <span class="badge" style="background: #fff3cd; color: #856404; font-weight: 600; padding: 5px 10px; border-radius: 5px;">335+ Courses</span>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card shadow-sm p-3 d-flex flex-row align-items-center" style="border-radius: 10px; background-color: #f8fbff;">
+                    <img src="{% static 'images/university_east_london.png' %}" class="rounded" style="width: 60px; height: 60px; border: 1px solid #ddd; padding: 5px; background: white;" alt="University of East London">
+                    <div class="ms-3" style="flex-grow: 1;">
+                        <h5 class="mb-1" style="font-weight: 700;">University of East London</h5>
+                        <p class="text-muted mb-0">London, United Kingdom</p>
+                    </div>
+                    <span class="badge" style="background: #fff3cd; color: #856404; font-weight: 600; padding: 5px 10px; border-radius: 5px;">373+ Courses</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<script src="{% static 'js/search_bar.js' %}"></script>
+{% endblock %}
